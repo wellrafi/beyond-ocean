@@ -7278,6 +7278,9 @@ header .banner {
   background-position: 50% 50%;
   color: #fff; }
 
+header .primary-header {
+  height: 900px; }
+
 header .second-banner {
   height: 500px; }
 
@@ -7527,6 +7530,9 @@ h5 {
 
 .h-250 {
   height: 250px; }
+
+.h-500 {
+  height: 500px; }
 
 .h-700 {
   height: 700px; }
@@ -7846,6 +7852,17 @@ h2 span, h3 span, h4 span, h5 span, h6 span {
   width: 1px;
   background-color: #EFEFEF; }
 
+button {
+  outline: none !important; }
+
+.max-height-500 {
+  max-height: 500px; }
+
+.testimoni .owl-nav {
+  margin-top: 50px !important; }
+  .testimoni .owl-nav button:hover {
+    background-color: transparent !important; }
+
 .fr-search {
   margin-top: 50px; }
   .fr-search input {
@@ -7869,3 +7886,11 @@ h2 span, h3 span, h4 span, h5 span, h6 span {
     margin: auto;
     padding-bottom: 14px;
     border-bottom: 2px solid #fff; }
+
+.testimoni {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-image: url(/assets/images/bg_testimoni.webp); }
+
+.pointer {
+  cursor: pointer; }

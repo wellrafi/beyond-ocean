@@ -145,10 +145,13 @@ img{
     height: 250px;
 }
 
+.h-500{
+    height: 500px;
+}
+
 .h-700{
     height: 700px;
 }
-
 
 
 .full-width{
@@ -591,6 +594,25 @@ h2 span, h3 span, h4 span, h5 span, h6 span{
     background-color: #EFEFEF;
 }
 
+button{
+    outline: none !important;
+}
+
+.max-height-500{
+    max-height: 500px;
+}
+
+.testimoni{
+    .owl-nav{
+        margin-top: 50px !important;
+        button{
+            &:hover{
+                background-color: transparent !important;
+            }
+        }
+    }
+}
+
 .fr-search{
     margin-top: 50px;
     input{
@@ -619,4 +641,14 @@ h2 span, h3 span, h4 span, h5 span, h6 span{
         border-bottom: 2px solid #fff;
     }
     
+}
+
+.testimoni{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-image: url(/assets/images/bg_testimoni.webp);
+}
+
+.pointer{
+    cursor: pointer;
 }
