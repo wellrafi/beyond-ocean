@@ -1,0 +1,85 @@
+footer{
+    background-color: #252525;
+    padding-top: 70px;
+    padding-bottom: 30px;
+
+    .d-flex{
+        position: relative;
+        height: 100%;
+        &::after{
+            position: absolute;
+            bottom: 0;
+            height: 1px;
+            background-color: rgba(#E7E7F2, .5);
+            opacity: .4;
+            width: 100%;
+            display: block;
+            content: "";
+        }
+        .flex{
+            height: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            /* display: flex; */
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            /* align-items: center; */
+        }
+    }
+
+    .nav-foot{
+        top: 0;
+        width: 100%;
+        .logo{
+            img{
+                height: 30px;
+            }
+        }
+
+        .nav-sosmed{
+            text-align: right;
+            margin-left: auto;
+            a{
+                margin-left: 15px;
+            }
+        }
+
+        ul{
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 0px;
+            list-style-type: none;
+            li{
+                display: inline-block;
+            }
+        }
+        .nav-menu{
+            text-align: center;
+            margin: auto;
+            a{
+                color: #fff !important;
+                margin-left: 10px;
+                font-weight: 400;
+                font-size: 18px;
+                margin-right: 10px;
+            } 
+            
+        }
+
+        .container-xl{
+            display: block;
+            position: relative;
+        }
+
+    }
+
+    .copyright{
+        color: rgba(#fff, .6) !important;
+        font-weight: normal;
+        font-size: 18px;
+        margin-top: 50px;
+    }
+
+}
