@@ -35,8 +35,8 @@ $(document).ready(function() {
     
     owlBanner.owlCarousel({
         center: true,
-        items: 1,
         dots: false,
+        items: 1,
         navs: false,
         loop:true,
         margin:10,
@@ -44,17 +44,23 @@ $(document).ready(function() {
         touchDrag: false,
         pullDrag: false,
         responsive:{
-            600: {
-                items: 1
+            400: {
+                items: 2,
             },
-            1000: {
-                items: 2
+            630: {
+                items: 3
             },
-            1300: {
-                items: 3,
-            },
-            1500: {
+            890: {
                 items: 4
+            },
+            1100: {
+                items: 5,
+            },
+            1200: {
+                items: 3
+            },
+            1400: {
+                items: 4,
             },
             1750: {
                 items: 5
@@ -78,7 +84,8 @@ $(document).ready(function() {
         let n = $(this).index()
         let getIndex = getIndexBanner(this)
         currentBanner = parseFloat(getIndex)
+        console.log({currentBanner, n})
         changeCurrentBanner(getIndex)
-        owlBanner.trigger('to.owl.carousel', n);
+        owlBanner.trigger('to.owl.carousel', getIndex - 1);
     })
 })

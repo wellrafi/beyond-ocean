@@ -1,34 +1,54 @@
 header {
     .d-flex{
         position: relative;
-        height: 100%;
-        .flex{
-            height: 100%;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            /* display: flex; */
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            /* align-items: center; */
-        }
-        &::after{
-            position: absolute;
-            bottom: 0;
-            height: 1px;
-            background-color: #fff;
-            opacity: .4;
-            width: 100%;
-            display: block;
-            content: "";
+    }
+    .placeholder {
+        span{
+            position: relative;
+            .line-placeholder{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 100%;
+                margin-left: 15px;
+                width: 150px;
+                height: 1px;
+                opacity: 1;
+                background-color: #fff;
+                border-radius: 1px;
+            }
         }
     }
-
     nav{
         position: relative;
         position: absolute;
         top: 0;
+        z-index: 10000000;
         width: 100%;
         height: 100px;  
+        .d-flex{
+            position: relative;
+            height: 100%;
+            .flex{
+                height: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                /* display: flex; */
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                /* align-items: center; */
+            }
+            &::after{
+                position: absolute;
+                bottom: 0;
+                height: 1px;
+                background-color: #fff;
+                opacity: .4;
+                width: 100%;
+                display: block;
+                content: "";
+            }
+        }
         .logo{
             img{
                 height: 30px;
@@ -78,7 +98,8 @@ header {
     }
 
     .primary-header{
-        height: 900px;
+        height: 100vh;
+        min-height: 900px;
     }
     
     .second-banner{

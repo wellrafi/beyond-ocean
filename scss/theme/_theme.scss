@@ -346,19 +346,47 @@ h2 span, h3 span, h4 span, h5 span, h6 span{
 .show-tour-banner{
     min-height: 700px;
     height: 100vh;
+    &>.d-flex{
+        height: 100%;
+    }
     .left{
         position: relative;
         height: 100%;
-        background-color: #009FA9;
+        background-color: transparent;
         width: 55%;
         padding-left: 5%;
         padding-right: 8%;
+
         .left-close{
             position: absolute;
             top: 5%;
             left: 5%;
         }
         &.active{
+            background-color: #009FA9;
+        }
+        .right-box{
+            margin-left: 18px;
+            padding-top: 10px;
+            h2{
+                line-height: 40px;
+            }
+            .d-flex{
+                height: auto !important;
+            }
+            .show-tour-short-desc{
+                margin-top: 8px;
+                max-width: 550px;
+                font-size: 17px;
+                line-height: 28px;
+            }
+            .top-box-show-tour{
+                font-size: 20px;
+                line-height: 20px;
+            }
+            .btn-tour-show{
+                margin-top: 12px;
+            }
         }
     }
     .right{
@@ -476,14 +504,299 @@ h2 span, h3 span, h4 span, h5 span, h6 span{
     }
 }
 
+#home-page{
+    .banner.primary-header{
+        display: flex;
+        flex-direction: column;
+        .d-table{
+            width: 100%;
+        }
+        .title-banner{
+            flex: 1;
+            height: 100%;
+        }
+        .litle-desc{
+            font-size: 20px;
+            line-height: 24px;
+            opacity: .8;
+        }
+        .placeholder{
+            font-size: 20px;
+        }
+        a.btn-banner{
+            border-radius: 3px;
+            padding: 15px 40px;
+            font-size: 20px;
+            border: 1px solid #fff;
+            transition: all .15s ease;
+            &:hover{
+                background-color: #fff;
+                color: #333 !important;
+            }
+        }
+        .circle.banner-circle{
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            background-color: transparent;
+        }
+        .left-side-banner{
+            padding-right: 8px;
+        }
+        .right-side-banner{
+            flex: 1;
+            padding-left: 20px;
+            margin-left: 20px;
+            margin-top: 15px;
+            opacity: .8;
+            .desc{
+                margin-top: -4px;
+                max-width: 600px;
+                padding-left: 10px;
+                font-size: 20px;
+                line-height: 150%;
+            }
+        }
+        @media screen and (max-width: 1050px){
+            h1{
+                font-size: 50px;
+            }
+            .middle-group{
+                .placeholder{
+                    font-size: 16px;
+                }
+                &>.d-flex{
+                    display: block !important;
+                    .litle-desc{
+                        font-size: 16px;
+                    }
+                    .right-side-banner{
+                        margin-top: 10px;
+                        margin-left: 0;
+                        padding-left: 0;
+                        opacity: 1;
+                        .circle.banner-circle{
+                            display: none;
+                        }
+                        .desc{
+                            padding-left: 0px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+            }
+        }   
+    }
+
+}
+
+@media screen and (max-width: 450px){
+    h1{
+        font-size: 40px !important;
+    }
+    h2{
+        font-size: 25px !important;
+        line-height: 30px !important;
+    }
+    p,h2,h3,h4,h5,h6{
+        text-align: left !important;
+    }
+    .button-banner{
+        margin-top: 25px !important;
+        .btn-banner{
+            font-size: 18px !important;
+            padding: 10px 30px !important; 
+        }
+    }
+    .wrapper-banner-slider-navigation{
+        padding-bottom: 10px !important;
+        display: block !important;
+        .sosmed{
+            display: none;
+        }
+        &::after{
+            display: none !important;
+        }
+    }
+    .navigation-arrow{
+        display: block !important;
+        .number-slide{
+            display: none;
+        }
+        .navigation-arrow-button{
+            text-align: center;
+            img{
+                height: 24px;
+            }
+        }
+    }
+    #who-we-are{
+        padding-top: 30px;
+        .col-xs-5.col-lg-5.col-md-12.col-sm-12{
+            .d-flex{
+                margin-left: 0px !important;
+            }
+        }
+        .col-xs-4.col-lg-4.col-md-6.col-sm-12{
+            .card{
+                margin-bottom: 20px !important;
+                padding-top: 20px !important;
+                img{
+                    height: 50px;
+                    margin-right: auto;
+                }
+                p.mb-0.mt-3{
+                    margin-top: 8px;
+                    font-size: 19px !important;
+                    margin-bottom: 0px !important;
+                }
+                p{
+                    line-height: 25px !important;
+                    margin-top: 4px !important;
+                    margin-bottom: 6px !important;
+                }
+            }
+        }
+    }
+    #service{
+        margin: 15px 0 !important;
+        padding: 15px 0 !important;
+        .card{
+            padding: 15px !important;
+            h5{
+                font-size: 21px !important;
+            }
+            img{
+                height: 50px !important;
+            }
+            p{
+                font-size: 16px !important;
+                line-height: 25px !important;
+            }
+        }
+    }
+    #play{
+        margin-bottom: 15px !important;
+        padding-bottom: 15px !important;
+    }
+    #gallery{
+        padding-top: 15px !important;
+        margin-top: 15px !important;
+        .section-title{
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        }
+        .gallery{
+            margin-top: 15px !important;
+            padding-top: 15px !important;
+            .row{
+                display: block;
+                div{
+                    width: 100% !important;
+                    flex: none !important;
+                    max-width: 100% !important;
+                }
+            }
+        }
+    }
+    .testimoni{
+        padding-top: 35px !important;
+        padding-bottom: 35px !important;
+        .section_title{
+            .d-flex{
+                display: block !important;
+            }
+        }
+        .owl-nav{
+            margin-top: 15px !important;
+        }
+    }
+    #waiting{
+        margin-top: 0px !important;
+        padding-top: 0px !important;
+        padding-bottom: 15px !important;
+        padding-bottom: 15px !important;
+        .row{
+            div{
+                padding: 0 !important;
+            }
+            .col-xs-7.col-lg-7.col-md-12.col-sm-12{
+                margin-top: 15px !important;
+                margin-left: 15px;
+                margin-right: 15px;
+                .d-table{
+                    margin-left: 0px !important;
+                }
+            }
+        }
+    }
+    #contact-us{
+        padding-top: 15px !important;
+        margin-top: 15px !important;
+        .section-title{
+            .title{
+                margin-bottom: 20px !important;
+            }
+        }
+        .max-600{
+            .d-flex{
+                display: block !important;
+                text-align: left !important;
+                .flex-1{
+                    margin-bottom: 10px ;
+                }
+            }
+        }
+        .section-content{
+            .d-flex{
+                display: block !important;
+                .card{
+                    padding: 20px !important;
+                    border-radius: 10px !important;
+                    border-bottom-left-radius: 0px !important;
+                    border-bottom-right-radius: 0px !important;
+                }
+                textarea{
+                    height: 130px !important;
+                }
+            }
+        }
+    }
+    footer{
+        padding-top: 30px !important;
+    }
+}
+@media screen and (max-width: 400px){
+    h1{
+        font-size: 30px !important;
+    }
+    p, .place, .duration{
+        font-size: 12px;
+    }
+    .owl-item img{
+        max-height: 250px;
+        max-width: calc(100vw - 50px);
+        border-radius: 10px;
+    }
+    .sosmed{
+        img{
+            height: 22px !important;
+            margin-right: 0px;
+        }
+    }
+}
 
 
 .banner-slider{
     display: flex;
+    // height: 100%;
+    // justify-content: flex-end;
     padding-top: 15px;
     padding-bottom: 30px;
     .owl-stage{
-        padding-top: 40px;
+        padding-top: 15px;
     }
     .banner-slider-navigation{
         padding-right: 15px;
@@ -604,7 +917,38 @@ h2 span, h3 span, h4 span, h5 span, h6 span{
             }
         }
     }
-
+    @media screen and (max-width: 1200px){
+        &{
+            display: block;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+        .banner-slider-image{
+            width: 100%;
+        }
+        .number-slide{
+            font-size: 35px !important;
+        }
+        .navigation-arrow{
+            display: flex;
+            flex-direction: row-reverse;
+            .number-slide{
+                margin-top: 0px !important;
+                margin-right: 15px;
+            }
+        }
+        .banner-slider-navigation{
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 20px;
+            .wrapper-banner-slider-navigation{
+                width: 100%;
+                min-width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1345px){
