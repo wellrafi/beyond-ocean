@@ -7885,9 +7885,164 @@ h2 span, h3 span, h4 span, h5 span, h6 span {
           padding-left: 0px;
           font-size: 16px; } }
 
+@media screen and (max-width: 768px) {
+  #who-we-are {
+    padding-top: 50px; }
+    #who-we-are h1 {
+      text-align: left;
+      font-size: 40px;
+      margin-bottom: 0px !important; }
+    #who-we-are .col-xs-5.col-lg-5.col-md-12.col-sm-12 .d-flex {
+      margin-left: 0px !important; }
+    #who-we-are .col-xs-5.col-lg-5.col-md-12.col-sm-12 p {
+      margin-top: 0px !important;
+      margin-bottom: 5px !important; }
+    #who-we-are .card {
+      max-width: 400px;
+      margin: auto; }
+      #who-we-are .card img {
+        height: 65px !important; }
+      #who-we-are .card p {
+        text-align: center; }
+  h2, .lg-text-center {
+    text-align: left !important; }
+  .section-title p {
+    margin-left: 0px !important;
+    margin-top: 15px !important; }
+  .section-title.lg-mx-2 {
+    margin-left: 0px !important;
+    margin-right: 0px !important; }
+  p,
+  .copyright {
+    font-size: 16px !important;
+    line-height: 28px !important;
+    margin-top: 1rem !important;
+    text-align: left; }
+  h2 {
+    font-size: 30px; }
+  #contact-about iframe {
+    min-height: 400px !important;
+    height: 400px !important;
+    margin-bottom: -10px; }
+  footer .d-flex {
+    display: block !important; }
+    footer .d-flex .flex {
+      margin-bottom: 15px; }
+    footer .d-flex .flex,
+    footer .d-flex .nav-menu,
+    footer .d-flex .logo,
+    footer .d-flex .nav-sosmed {
+      margin-left: 0 !important;
+      text-align: left !important;
+      margin-right: auto !important; }
+    footer .d-flex .nav-sosmed a,
+    footer .d-flex .nav-menu a {
+      margin-left: 0;
+      margin-right: 15px !important;
+      margin-bottom: 15px !important; }
+    footer .d-flex .nav-menu {
+      margin-top: 15px; }
+      footer .d-flex .nav-menu li {
+        display: block !important;
+        margin-bottom: 15px; } }
+
+@media screen and (max-width: 655px) {
+  .play .d-flex {
+    display: block !important; }
+    .play .d-flex img {
+      max-height: 300px !important;
+      border-radius: 10px !important;
+      border-bottom-left-radius: 0px !important;
+      border-bottom-right-radius: 0px !important; }
+    .play .d-flex .flex-5 {
+      border-radius: 10px !important;
+      border-top-left-radius: 0px !important;
+      border-top-right-radius: 0px !important; } }
+
+.modal-filter {
+  display: none; }
+
+@media screen and (max-width: 840px) {
+  #tours .modal-filter {
+    position: fixed;
+    z-index: 10000000000000000000000000000;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    display: block !important;
+    bottom: 0;
+    left: 0; }
+    #tours .modal-filter.active {
+      visibility: visible; }
+      #tours .modal-filter.active .wrapper-modal-filter {
+        transform: none !important; }
+      #tours .modal-filter.active .bg-modal-filter {
+        background-color: rgba(0, 0, 0, 0.8); }
+    #tours .modal-filter .close-modal-filter {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      opacity: 1;
+      z-index: 100; }
+    #tours .modal-filter .bg-modal-filter {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      transition: all .1s ease;
+      background-color: rgba(0, 0, 0, 0); }
+    #tours .modal-filter .wrapper-modal-filter {
+      transform: translateY(100%);
+      z-index: 4;
+      transition: all .3s ease;
+      padding: 15px;
+      background-color: #fff;
+      border-top-left-radius: 15px;
+      width: 100%;
+      border-top-right-radius: 15px;
+      display: block !important;
+      position: fixed;
+      bottom: 0;
+      left: 0; }
+  #tours .filter-toggle {
+    padding: 15px !important; }
+  #tours .banner {
+    height: 500px !important; }
+  #tours .tour-item .card > .d-flex {
+    display: block !important; }
+    #tours .tour-item .card > .d-flex p {
+      margin: 0px !important; }
+  #tours .tour-item .flex-6.ml-4 {
+    margin-left: 15px !important; }
+  #tours .tour-item .tour-item-body {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important; }
+  #tours .tour-item button {
+    width: 100%; }
+  #tours .tour-item .line-vertical.float-left.mr-4,
+  #tours .tour-item .review {
+    display: none; }
+  #tours .tour-item .price {
+    margin-top: 0px !important; }
+  .wrapper-content {
+    max-width: 100% !important; }
+    .wrapper-content .content.p-lg-5 {
+      padding-bottom: 0px !important;
+      padding-left: 15px !important; }
+  section.pb-5 {
+    padding-bottom: 15px !important; }
+  section.py-6.my-5 {
+    margin-top: 15px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    margin-bottom: 15px !important; } }
+
 @media screen and (max-width: 450px) {
   h1 {
     font-size: 40px !important; }
+  .fr-search {
+    margin-top: 20px !important; }
   h2 {
     font-size: 25px !important;
     line-height: 30px !important; }
@@ -7913,33 +8068,36 @@ h2 span, h3 span, h4 span, h5 span, h6 span {
       text-align: center; }
       .navigation-arrow .navigation-arrow-button img {
         height: 24px; }
-  #who-we-are {
-    padding-top: 30px; }
-    #who-we-are .col-xs-5.col-lg-5.col-md-12.col-sm-12 .d-flex {
-      margin-left: 0px !important; }
-    #who-we-are .col-xs-4.col-lg-4.col-md-6.col-sm-12 .card {
-      margin-bottom: 20px !important;
-      padding-top: 20px !important; }
-      #who-we-are .col-xs-4.col-lg-4.col-md-6.col-sm-12 .card img {
-        height: 50px;
-        margin-right: auto; }
-      #who-we-are .col-xs-4.col-lg-4.col-md-6.col-sm-12 .card p.mb-0.mt-3 {
-        margin-top: 8px;
-        font-size: 19px !important;
-        margin-bottom: 0px !important; }
-      #who-we-are .col-xs-4.col-lg-4.col-md-6.col-sm-12 .card p {
-        line-height: 25px !important;
-        margin-top: 4px !important;
-        margin-bottom: 6px !important; }
+  #who-we-are .col-xs-5.col-lg-5.col-md-12.col-sm-12 .d-flex {
+    margin-left: 0px !important; }
+  #who-we-are .col-xs-4.col-lg-4.col-md-6.col-sm-12 .card {
+    margin-bottom: 20px !important;
+    padding-top: 20px !important; }
+    #who-we-are .col-xs-4.col-lg-4.col-md-6.col-sm-12 .card img {
+      height: 50px;
+      margin-right: auto; }
+    #who-we-are .col-xs-4.col-lg-4.col-md-6.col-sm-12 .card p.mb-0.mt-3 {
+      margin-top: 8px;
+      font-size: 19px !important;
+      margin-bottom: 0px !important; }
+    #who-we-are .col-xs-4.col-lg-4.col-md-6.col-sm-12 .card p {
+      line-height: 25px !important;
+      margin-top: 4px !important;
+      margin-bottom: 6px !important; }
+  .right-section img,
+  .left-section img {
+    min-height: 100% !important; }
   #service {
     margin: 15px 0 !important;
     padding: 15px 0 !important; }
     #service .card {
-      padding: 15px !important; }
+      padding: 8px !important; }
+      #service .card .col-10.ml-2 {
+        margin-left: 0px !important; }
       #service .card h5 {
         font-size: 21px !important; }
       #service .card img {
-        height: 50px !important; }
+        height: 45px !important; }
       #service .card p {
         font-size: 16px !important;
         line-height: 25px !important; }
@@ -8000,6 +8158,15 @@ h2 span, h3 span, h4 span, h5 span, h6 span {
         border-bottom-right-radius: 0px !important; }
       #contact-us .section-content .d-flex textarea {
         height: 130px !important; }
+  #tours .tour-item-detail {
+    margin-bottom: 5px !important; }
+    #tours .tour-item-detail div:nth-child(1) {
+      display: none !important; }
+  #tours .tour-item-title {
+    margin-top: 8px !important; }
+  #tours .tour-item-body p {
+    max-height: 76px !important;
+    overflow: hidden; }
   footer {
     padding-top: 30px !important; } }
 
@@ -8192,42 +8359,6 @@ h2 span, h3 span, h4 span, h5 span, h6 span {
       margin-left: auto;
       text-align: center !important;
       margin: auto !important; } }
-
-@media screen and (max-width: 768px) {
-  p,
-  .copyright {
-    font-size: 16px !important;
-    line-height: 28px !important;
-    margin-top: 1rem !important;
-    text-align: center; }
-  h2 {
-    font-size: 30px;
-    text-align: center; }
-  #contact-about iframe {
-    min-height: 400px !important;
-    height: 400px !important;
-    margin-bottom: -10px; }
-  footer .d-flex {
-    display: block !important; }
-    footer .d-flex .flex {
-      margin-bottom: 15px; }
-    footer .d-flex .flex,
-    footer .d-flex .nav-menu,
-    footer .d-flex .logo,
-    footer .d-flex .nav-sosmed {
-      margin-left: 0 !important;
-      text-align: left !important;
-      margin-right: auto !important; }
-    footer .d-flex .nav-sosmed a,
-    footer .d-flex .nav-menu a {
-      margin-left: 0;
-      margin-right: 15px !important;
-      margin-bottom: 15px !important; }
-    footer .d-flex .nav-menu {
-      margin-top: 15px; }
-      footer .d-flex .nav-menu li {
-        display: block !important;
-        margin-bottom: 15px; } }
 
 .wrapper-content {
   height: 100%;

@@ -592,9 +592,230 @@ h2 span, h3 span, h4 span, h5 span, h6 span{
 
 }
 
+@media screen and (max-width: 768px){
+    #who-we-are{
+        padding-top: 50px;
+        h1{
+            text-align: left;
+            font-size: 40px;
+            margin-bottom: 0px !important;
+        }
+        .col-xs-5.col-lg-5.col-md-12.col-sm-12{
+            .d-flex{
+                margin-left: 0px !important;
+            }
+            p{
+                margin-top: 0px !important;
+                margin-bottom: 5px !important;
+            }
+        }
+        .card{
+            max-width: 400px;
+            margin: auto;
+            img{
+                height: 65px !important;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+    h2, .lg-text-center{
+        text-align: left !important;
+    }
+    .section-title{
+        p{
+            margin-left: 0px !important;
+            margin-top: 15px !important;
+            // display: none;
+        }
+        &.lg-mx-2{
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+        }
+    }
+    p,
+    .copyright{
+        font-size: 16px !important;
+        line-height: 28px !important;
+        margin-top: 1rem !important;
+        text-align: left;
+    }
+    h2{
+        font-size: 30px;
+        // text-align: center;
+    }
+    #contact-about iframe {
+        min-height: 400px !important;
+        height: 400px !important;
+        margin-bottom: -10px;
+    }
+    footer{
+        .d-flex{
+            display: block !important;
+            .flex{
+                margin-bottom: 15px ;
+            }
+            .flex,
+            .nav-menu,
+            .logo,
+            .nav-sosmed{
+                margin-left: 0 !important;
+                text-align: left !important;
+                margin-right: auto !important;
+            }
+            .nav-sosmed,
+            .nav-menu{
+                a{
+                    margin-left: 0;
+                    margin-right: 15px !important;
+                    margin-bottom: 15px !important;
+                }
+            }
+
+            .nav-menu{
+                margin-top: 15px;
+                li{
+                   display: block !important; 
+                   margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 655px){
+    .play{
+        .d-flex{
+            display: block !important;
+            img{
+                max-height: 300px !important;
+                border-radius: 10px !important;
+                border-bottom-left-radius: 0px !important;
+                border-bottom-right-radius: 0px !important;
+            }
+            .flex-5{
+                border-radius: 10px !important;
+                border-top-left-radius: 0px !important;
+                border-top-right-radius: 0px !important;
+            }
+        }
+    }
+}
+
+.modal-filter{
+    display: none;
+}
+
+@media screen and (max-width: 840px){
+    #tours{
+        .modal-filter{
+            position: fixed;
+            z-index: 10000000000000000000000000000;
+            visibility: hidden;
+            width: 100%;
+            height: 100%;
+            display: block !important;
+            bottom: 0;
+            left: 0;
+            // transition: .5s ease;
+            &.active{
+                visibility: visible;
+                .wrapper-modal-filter{
+                    transform: none !important;
+                }
+                .bg-modal-filter{
+                    background-color: rgba($color: #000, $alpha: .8);
+                }
+            }
+            .close-modal-filter{
+                position: fixed;
+                top: 15px;
+                right: 15px;
+                opacity: 1;
+                z-index: 100;
+            }
+            .bg-modal-filter{
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                transition: all .1s ease;
+                background-color: rgba($color: #000, $alpha: 0);
+            }
+            .wrapper-modal-filter{
+                transform: translateY(100%);
+                z-index: 4;
+                // transition-delay: .05s;
+                transition: all .3s ease;
+                padding: 15px;
+                background-color: #fff;
+                border-top-left-radius: 15px;
+                width: 100%;
+                border-top-right-radius: 15px;
+                display: block !important;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        .filter-toggle{
+            padding: 15px !important;
+        }
+        .banner{
+            height: 500px !important;
+        }
+        .tour-item{
+            .card > .d-flex{
+                display: block !important;
+                p{
+                    margin: 0px !important;
+                }
+            }
+            .flex-6.ml-4{
+                margin-left: 15px !important;
+            }
+            .tour-item-body{
+                padding-top: 0px !important;
+                padding-bottom: 0px !important;
+            }
+            button{
+                width: 100%;
+            }
+            .line-vertical.float-left.mr-4,
+            .review{
+                display: none;
+            }
+            .price{
+                margin-top: 0px !important;
+            }
+        }
+    }
+    .wrapper-content{
+        max-width: 100% !important;
+        .content.p-lg-5{
+            padding-bottom: 0px !important;
+            padding-left: 15px !important;
+        }
+    }
+    section.pb-5{
+        padding-bottom: 15px !important;
+    }
+    section.py-6.my-5{
+        margin-top: 15px !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        margin-bottom: 15px !important;
+    }
+}
+
 @media screen and (max-width: 450px){
     h1{
         font-size: 40px !important;
+    }
+    .fr-search{
+        margin-top: 20px !important;
     }
     h2{
         font-size: 25px !important;
@@ -633,7 +854,6 @@ h2 span, h3 span, h4 span, h5 span, h6 span{
         }
     }
     #who-we-are{
-        padding-top: 30px;
         .col-xs-5.col-lg-5.col-md-12.col-sm-12{
             .d-flex{
                 margin-left: 0px !important;
@@ -660,16 +880,25 @@ h2 span, h3 span, h4 span, h5 span, h6 span{
             }
         }
     }
+    .right-section,
+    .left-section{
+        img{
+            min-height: 100% !important;
+        }
+    }
     #service{
         margin: 15px 0 !important;
         padding: 15px 0 !important;
         .card{
-            padding: 15px !important;
+            .col-10.ml-2{
+                margin-left: 0px !important;
+            }
+            padding: 8px !important;
             h5{
                 font-size: 21px !important;
             }
             img{
-                height: 50px !important;
+                height: 45px !important;
             }
             p{
                 font-size: 16px !important;
@@ -764,10 +993,28 @@ h2 span, h3 span, h4 span, h5 span, h6 span{
             }
         }
     }
+    #tours{
+        .tour-item-detail{
+            div:nth-child(1){
+                display: none !important;
+            }
+            margin-bottom: 5px !important;
+        }
+        .tour-item-title{
+            margin-top: 8px !important;
+        }
+        .tour-item-body{
+            p{
+                max-height: 76px !important;
+                overflow: hidden;
+            }
+        }
+    }
     footer{
         padding-top: 30px !important;
     }
 }
+
 @media screen and (max-width: 400px){
     h1{
         font-size: 30px !important;
@@ -1040,57 +1287,6 @@ h2 span, h3 span, h4 span, h5 span, h6 span{
                 margin-left: auto;
                 text-align: center !important;
                 margin: auto !important;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 768px){
-    p,
-    .copyright{
-        font-size: 16px !important;
-        line-height: 28px !important;
-        margin-top: 1rem !important;
-        text-align: center;
-    }
-    h2{
-        font-size: 30px;
-        text-align: center;
-    }
-    #contact-about iframe {
-        min-height: 400px !important;
-        height: 400px !important;
-        margin-bottom: -10px;
-    }
-    footer{
-        .d-flex{
-            display: block !important;
-            .flex{
-                margin-bottom: 15px ;
-            }
-            .flex,
-            .nav-menu,
-            .logo,
-            .nav-sosmed{
-                margin-left: 0 !important;
-                text-align: left !important;
-                margin-right: auto !important;
-            }
-            .nav-sosmed,
-            .nav-menu{
-                a{
-                    margin-left: 0;
-                    margin-right: 15px !important;
-                    margin-bottom: 15px !important;
-                }
-            }
-
-            .nav-menu{
-                margin-top: 15px;
-                li{
-                   display: block !important; 
-                   margin-bottom: 15px;
-                }
             }
         }
     }

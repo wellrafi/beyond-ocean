@@ -88,4 +88,17 @@ $(document).ready(function() {
         changeCurrentBanner(getIndex)
         owlBanner.trigger('to.owl.carousel', getIndex - 1);
     })
+
+    $('.filter-toggle').on('click', function () {
+        $('.modal-filter').addClass('active')
+    })
+    
+    $('.bg-modal-filter').on('click', function () {
+        $('.modal-filter').removeClass('active')
+    })
+    
+    $('.close-modal-filter').on('click', function () {
+        $('.modal-filter').removeClass('active')
+    })
+
 })

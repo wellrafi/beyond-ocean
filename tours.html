@@ -53,7 +53,7 @@
     <link rel="stylesheet" href="/css/owl.theme.default.min.css">
 
 </head>
-<body>
+<body id="tours">
     <header>
         <nav>
             <div class="container-xl">
@@ -99,7 +99,7 @@
                 </div>
             </div>
         </nav>
-        <div class="banner h-700 pb-5">
+        <div class="banner tour-banner h-700 pb-5">
             <div class="container-xl mb-5 pb-5">
                 <div class="d-table w-100">
                     <div class="vertical-middle">
@@ -123,8 +123,18 @@
         <section class="mt-minus-120 mb-5 pb-5">
             <div class="container-xl">
                 <div class="row">
-                    <div class="col-3">
-                        <div class="card card-body">
+                    <div class="col-xs-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                        <div class="d-xs-none d-lg-none d-md-block d-sm-block d-block mb-3">
+                            <div class="clearfix">
+                                <div class="float-left card card-body pointer filter-toggle">
+                                    <div class="d-flex">
+                                        <img src="/assets/icons/filter.svg" height="24" alt="">
+                                        <span class="ml-1"><strong>Filter</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-body d-xs-block d-lg-block d-md-none d-sm-none d-none">
                             <strong class="mb-2 f-24">Filter by</strong>
                             <div class="filter-item mt-2">
                                 <div class="title-filter-item">
@@ -190,30 +200,6 @@
                             </div>
                             <div class="filter-item mt-3">
                                 <div class="title-filter-item">
-                                    <strong>Package</strong>
-                                    <hr>
-                                </div>
-                                <div class="body-filter-item">
-                                    <div class="custom-control custom-checkbox mb-1">
-                                        <input type="checkbox" class="custom-control-input" id="package1" name="package" value="family">
-                                        <label class="custom-control-label" for="package1">Family</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox mb-1">
-                                        <input type="checkbox" class="custom-control-input" id="package2" name="package" value="backpacker">
-                                        <label class="custom-control-label" for="package2">Backpacker</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox mb-1">
-                                        <input type="checkbox" class="custom-control-input" id="package3" name="package" value="honeymoon">
-                                        <label class="custom-control-label" for="package3">honeymoon</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox mb-1">
-                                        <input type="checkbox" class="custom-control-input" id="package4" name="package" value="adventure">
-                                        <label class="custom-control-label" for="package4">adventure</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="filter-item mt-3">
-                                <div class="title-filter-item">
                                     <strong>Tour Type</strong>
                                     <hr>
                                 </div>
@@ -270,7 +256,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-xs-9 col-lg-9 col-md-12 col-sm-12 col-12">
                         <div class="tour-item mb-4">
                             <div class="card overflow-hidden border-0">
                                 <div class="d-flex">
@@ -280,6 +266,14 @@
                                     <div class="flex-6 ml-4 mr-2">
                                         <div class="tour-item-title mt-4 pt-2">
                                             <h5>Andaman Delight </h5>
+                                            <div class="d-flex mt-2">
+                                                <img src="/assets/icons/star.svg" alt="">
+                                                <img src="/assets/icons/star.svg" alt="">
+                                                <img src="/assets/icons/star.svg" alt="">
+                                                <img src="/assets/icons/star.svg" alt="">
+                                                <img src="/assets/icons/star_half.svg" alt="">
+                                                <span class="ml-2 f-12">(4.5)</span>
+                                            </div>
                                             <div class="tour-item-detail mt-2 d-flex">
                                                 <div class="d-flex mr-2">
                                                     <img src="/assets/icons/clock.svg" height="22" class="mr-1" alt="">
@@ -542,7 +536,64 @@
                     </ul>
                 </nav>
             </div>
+            
         </section>
+        <div class="modal-filter">
+            <div class="close-modal-filter">
+                <img src="/assets/icons/close.svg" alt="">
+            </div>
+            <div class="bg-modal-filter"></div>
+            <div class="wrapper-modal-filter">
+                <div class="filter-item mt-2">
+                    <div class="title-filter-item">
+                        <strong>Destination</strong>
+                        <hr>
+                    </div>
+                    <div class="body-filter-item">
+                        <div class="custom-control custom-checkbox mb-1">
+                            <input type="checkbox" class="custom-control-input" id="destination1" name="destination" value="port-blair" required>
+                            <label class="custom-control-label" for="destination1">Port Blair</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-1">
+                            <input type="checkbox" class="custom-control-input" id="destination2" name="destination" value="havelock" required>
+                            <label class="custom-control-label" for="destination2">Havelock</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-1">
+                            <input type="checkbox" class="custom-control-input" id="destination3" name="destination" value="batarang" required>
+                            <label class="custom-control-label" for="destination3">Batarang</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-1">
+                            <input type="checkbox" class="custom-control-input" id="destination4" name="destination" value="neil" required>
+                            <label class="custom-control-label" for="destination4">Neil</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-item mt-3">
+                    <div class="title-filter-item">
+                        <strong>Package</strong>
+                        <hr>
+                    </div>
+                    <div class="body-filter-item">
+                        <div class="custom-control custom-checkbox mb-1">
+                            <input type="checkbox" class="custom-control-input" id="package1" name="package" value="family">
+                            <label class="custom-control-label" for="package1">Family</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-1">
+                            <input type="checkbox" class="custom-control-input" id="package2" name="package" value="backpacker">
+                            <label class="custom-control-label" for="package2">Backpacker</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-1">
+                            <input type="checkbox" class="custom-control-input" id="package3" name="package" value="honeymoon">
+                            <label class="custom-control-label" for="package3">honeymoon</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-1">
+                            <input type="checkbox" class="custom-control-input" id="package4" name="package" value="adventure">
+                            <label class="custom-control-label" for="package4">adventure</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section class="so-what">
             <div class="container-xl my-5 py-5">
                 <div class="row">
